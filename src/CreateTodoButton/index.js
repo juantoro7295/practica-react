@@ -1,5 +1,6 @@
 import React from 'react';
 import './CreateTodoButton.css';
+import { BsPlusCircleFill } from "react-icons/bs";
 
 function CreateTodoButton(props) {
   const onClickButton = () => {
@@ -11,7 +12,7 @@ function CreateTodoButton(props) {
       className="CreateTodoButton"
       onClick={onClickButton}
     >
-      +
+      <BsPlusCircleFill/>
     </button>
   );
 }
