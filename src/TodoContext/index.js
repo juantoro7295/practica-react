@@ -50,8 +50,9 @@ function TodoProvider(props) {
     newTodos.splice(todoIndex, 1);
     saveTodos(newTodos);
   };
-  
+
   return (
+
     <TodoContext.Provider value={{
       loading,
       error,
@@ -65,9 +66,11 @@ function TodoProvider(props) {
       deleteTodo,
       openModal,
       setOpenModal,
+
     }}>
       {props.children}
     </TodoContext.Provider>
+    
   );
 }
 

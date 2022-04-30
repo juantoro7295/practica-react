@@ -2,8 +2,8 @@ import React from 'react';
 import { TodoContext } from '../TodoContext';
 import './TodoForm.css';
 import { FcPlus, FcCancel } from "react-icons/fc";
-import {ButtonCancel} from "./ButtonCancel";
-import {ButtonAdd} from "./ButtonAdd";
+import { ButtonCancel } from "./ButtonCancel";
+import { ButtonAdd } from "./ButtonAdd";
 
 function TodoForm() {
   const [newTodoValue, setNewTodoValue] = React.useState('');
@@ -11,11 +11,11 @@ function TodoForm() {
     addTodo,
     setOpenModal,
   } = React.useContext(TodoContext);
-  
+
   const onChange = (event) => {
     setNewTodoValue(event.target.value);
   };
-  
+
   const onSubmit = (event) => {
     event.preventDefault();
     addTodo(newTodoValue);
@@ -31,9 +31,9 @@ function TodoForm() {
         placeholder="Eje: Cortar la cebolla para el almuerzo"
       />
       <div className="TodoForm-buttonContainer">
-        <ButtonCancel/>
-        <ButtonAdd/>
-        
+        <ButtonCancel />
+        <ButtonAdd />
+
       </div>
     </form>
   );
