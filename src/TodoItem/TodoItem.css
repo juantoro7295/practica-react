@@ -1,5 +1,5 @@
 .TodoItem {
-  background-color: #FAFAFA;
+  background-color: #a4d9e4;
   position: relative;
   display: flex;
   justify-content: center;
@@ -28,7 +28,6 @@
   width: 48px;
   font-size: 24px;
   font-weight: bold;
-  /* background-color: #CCC; */
 }
 
 .Icon-check {
